@@ -3,8 +3,22 @@ from datetime import datetime
 
 def fetch_foa(opp_id):
     url = "https://apply07.grants.gov/grantsws/rest/opportunity/details"
-    response = requests.post(url, data={"oppId": opp_id})
-    return response.json()
+    
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Content-Type": "application/x-www-form-urlencoded"
+    }
+    
+    try:
+        response = requests.post(url, data={"oppId": opp_id}, headers=headers)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.ConnectionError:
+        print("❌ Connection failed — site temporarily blocking. Try again in 30 seconds.")
+        return {}
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        return {}
 
 def parse_date(date_str):
     if not date_str or date_str == "N/A":

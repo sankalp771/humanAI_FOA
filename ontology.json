@@ -14,6 +14,10 @@
   "populations": {
     "Veterans": ["veteran", "military", "armed forces"],
     "Rural Communities": ["rural", "remote", "underserved"],
-    "Youth": ["children", "youth", "adolescent", "student"]
-  }
+    "Youth": ["children", "youth", "adolescent", "student"],
+    "Native Communities": ["alaska native", "tribal", "indigenous", "native american"],
+    "Hispanic Communities": ["hispanic", "latino", "latina"],
+    "Researchers & Faculty": ["investigator", "faculty", "researcher", "mentor", "fellows"],
+    "Patients": ["patient", "clinical", "patient-oriented"]
+}
 }
