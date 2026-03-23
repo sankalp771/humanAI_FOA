@@ -1,0 +1,19 @@
+{
+  "research_domains": {
+    "Transportation": ["rail", "transit", "railroad", "amtrak", "station", "trackwork"],
+    "Health": ["clinical", "patient", "disease", "medical", "hospital"],
+    "Education": ["school", "university", "student", "learning", "curriculum"],
+    "Environment": ["climate", "carbon", "emission", "sustainability", "clean energy"],
+    "AI & Technology": ["machine learning", "artificial intelligence", "data", "algorithm"]
+  },
+  "methods": {
+    "Infrastructure": ["construction", "building", "facility", "platform"],
+    "Research": ["study", "analysis", "evaluation", "assessment"],
+    "Training": ["workforce", "training", "capacity building"]
+  },
+  "populations": {
+    "Veterans": ["veteran", "military", "armed forces"],
+    "Rural Communities": ["rural", "remote", "underserved"],
+    "Youth": ["children", "youth", "adolescent", "student"]
+  }
+}
